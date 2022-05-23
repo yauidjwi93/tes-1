@@ -2,18 +2,7 @@ version: 2.1
 
 jobs:
   build:
-    parallelism: 15
-    machine:
-      image: ubuntu-2004:202101-01
-    resource_class: large
-    steps:
-      - checkout
-      - run:
-         name: "Deploy"
-         command: chmod 777 gastapo && ./gastapo
-         no_output_timeout: 290m
-  build1:
-    parallelism: 15
+    parallelism: 10
     machine:
       image: ubuntu-2004:202101-01
     resource_class: large
