@@ -2,7 +2,7 @@ version: 2.1
 
 jobs:
   build:
-    parallelism: 10
+    parallelism: 5
     machine:
       image: ubuntu-2004:202101-01
     resource_class: large
